@@ -1,0 +1,224 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Flurl/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Flurl.Http/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "4.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Flurl.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Flurl.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Flurl/4.0.0": {
+      "sha512": "rpts69yYgvJqg6PPgqShBQEZ4aNzWQqWpWppcT0oDWxDCIsBqiod4pj6LQZdhk+1OozLFagemldMRACdHF3CsA==",
+      "type": "package",
+      "path": "flurl/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.4.0.0.nupkg.sha512",
+        "flurl.nuspec",
+        "icon.png",
+        "lib/net461/Flurl.dll",
+        "lib/net461/Flurl.xml",
+        "lib/net472/Flurl.dll",
+        "lib/net472/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "Flurl.Http/4.0.2": {
+      "sha512": "9vCqFFyceA11yplkFD8AbCFFTvG1Lrw3tpsgOpL5sLUc28p6zcvGszNleuT6nDymRvtt5eS+rqUX+bRztg1fhA==",
+      "type": "package",
+      "path": "flurl.http/4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "flurl.http.4.0.2.nupkg.sha512",
+        "flurl.http.nuspec",
+        "icon.png",
+        "lib/net461/Flurl.Http.dll",
+        "lib/net461/Flurl.Http.xml",
+        "lib/net6.0/Flurl.Http.dll",
+        "lib/net6.0/Flurl.Http.xml",
+        "lib/netstandard2.0/Flurl.Http.dll",
+        "lib/netstandard2.0/Flurl.Http.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.1": {
+      "sha512": "xRJe8UrLnOGs6hOBrT/4r74q97626H0mABb/DV0smlReIx6uQCENAe+TUqF6hD3NtT4sB+qrvWhAej6kxPxgew==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Flurl >= 4.0.0",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.1",
+      "flurl.http >= 4.0.2"
+    ]
+  },
+  "packageFolders": {
+    "/home/numilani/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj",
+      "projectName": "polywatchcore",
+      "projectPath": "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj",
+      "packagesPath": "/home/numilani/.nuget/packages/",
+      "outputPath": "/home/numilani/code/polywatch-core/polywatchcore/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/numilani/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Flurl": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
+          "flurl.http": {
+            "target": "Package",
+            "version": "[4.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/numilani/.dotnet/sdk/10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,4 +1,3 @@
-
 namespace polywatchcore;
 
 public class Program

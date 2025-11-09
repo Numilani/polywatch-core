@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "PTJ9+BxdWhY=",
+  "success": true,
+  "projectFilePath": "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj",
+  "expectedPackageFiles": [
+    "/home/numilani/.nuget/packages/flurl/4.0.0/flurl.4.0.0.nupkg.sha512",
+    "/home/numilani/.nuget/packages/flurl.http/4.0.2/flurl.http.4.0.2.nupkg.sha512",
+    "/home/numilani/.nuget/packages/microsoft.aspnetcore.openapi/9.0.1/microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "/home/numilani/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

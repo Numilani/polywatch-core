@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj": {}
+  },
+  "projects": {
+    "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj",
+        "projectName": "polywatchcore",
+        "projectPath": "/home/numilani/code/polywatch-core/polywatchcore/polywatchcore.csproj",
+        "packagesPath": "/home/numilani/.nuget/packages/",
+        "outputPath": "/home/numilani/code/polywatch-core/polywatchcore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/numilani/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Flurl": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/numilani/.dotnet/sdk/10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
