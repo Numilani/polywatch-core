@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 public class CAMEOActorGeodata
 {
-  public string Id {get;set;}
+  // public string Id {get;set;}
 
   public int GeoType {get;set;}
   public string GeoName {get;set;}

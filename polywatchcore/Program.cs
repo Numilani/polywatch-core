@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using polywatchcore.Services;
+
 namespace polywatchcore;
 
 public class Program
@@ -11,6 +14,10 @@ public class Program
         builder.Services.AddControllers();
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
+
+        builder.Services.AddDbContext<AppDbContext>(cfg => cfg.UseSqlite("Data Source=polywatch-core.db"));
+
+        builder.Services.AddScoped<GDELTNewsService>();
 
         var app = builder.Build();
 

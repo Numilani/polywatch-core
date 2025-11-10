@@ -1,5 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+[Table("GDELTEvents")]
 public class GDELTEvent
 {
+  [Key]
   public required string Id {get;set;}
 
   public string? Title {get;set;}
@@ -18,8 +23,8 @@ public class GDELTEvent
   public required string EventCode {get;set;}
   public int QuadClass {get;set;}
  
-  public int GoldsteinScale {get;set;}
-  public int AverageTone {get;set;}
+  public float GoldsteinScale {get;set;}
+  public float AverageTone {get;set;}
   
   public int TotalMentionsAtUpdate {get;set;}
   public int TotalSourcesAtUpdate {get;set;}
