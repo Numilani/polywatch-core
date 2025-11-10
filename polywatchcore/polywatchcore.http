@@ -1,6 +1,9 @@
 @polywatchcore_HostAddress = http://localhost:5096
 
-GET {{polywatchcore_HostAddress}}/weatherforecast/
+### Manually Update GDELT Events
+GET {{polywatchcore_HostAddress}}/gdeltevents/manual/parse
+
 Accept: application/json
 
 ###
+
