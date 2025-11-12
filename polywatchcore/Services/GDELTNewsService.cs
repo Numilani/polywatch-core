@@ -130,7 +130,8 @@ public class GDELTNewsService(AppDbContext db)
     return rv;
   }
 
-  public async Task<int> SaveEvents(List<GDELTEvent> events, int batchSize = 500){
+  public async Task<int> SaveEvents(List<GDELTEvent> events, int batchSize = 500)
+  {
     int total = 0;
     int i = 0;
     foreach (var e in events){
