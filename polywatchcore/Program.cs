@@ -54,6 +54,13 @@ public class Program
 
   private static async Task DoJobSetupAsync(IScheduler scheduler)
   {
-
+    await scheduler.ScheduleJob(
+        JobBuilder.Create<GdeltImportJob>()
+        .WithIdentity("GDELTImport", "imports")
+        .Build(),
+        TriggerBuilder.Create()
+        .WithSimpleSchedule(x => x.WithIntervalInMinutes(15).RepeatForever())
+        .Build()
+        );
   }
 }

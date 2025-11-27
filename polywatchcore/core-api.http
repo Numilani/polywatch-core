@@ -5,5 +5,5 @@ GET {{polywatchcore_HostAddress}}/gdeltevents/manual/parse
 
 Accept: application/json
 
-###
+##
 
