@@ -1,0 +1,15 @@
+###
+# @name Get Issue By Date
+# @var request date 2025-11-24
+GET http://{{fedreg.url}}/issues/{{date}}.json
+
+### 
+# @name Get Document Metadata By Id
+# @var request doc_id 2025-20754
+GET http://{{fedreg.url}}/documents/{{doc_id}}.json
+
+###
+# @name Get Document XML Text By Id
+# @var request datepath 2025/11/24
+# @var request doc_id 2025-20754
+GET http://federalregister.gov/documents/full_text/xml/{{datepath}}/{{doc_id}}.xml

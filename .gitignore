@@ -1,4 +1,4 @@
-/bin
-/obj
-polywatch-core.db
-
+polywatchcore/bin
+polywatchcore/obj
+polywatchcore/polywatch-core.db
+polywatchcore/resterm.env.json

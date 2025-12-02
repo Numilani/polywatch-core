@@ -1,0 +1,25 @@
+###
+# @name Get Courts
+GET http://{{courtlistener.url}}/courts
+Authorization: Token {{courtlistener.apikey}}
+
+###
+# @name Get Dockets
+# @desc filtered by date
+# @timeout 180s
+# jurisdictions: F = fed appellate, FD = fed district
+# FB = fed bankruptcy, FBC = FB appeal, FS = fed special
+# C = committee, I = international
+# @var request jurisdiction = F
+# @var request req_date = 2025-11-20
+# @var request count_only = on
+GET http://{{courtlistener.url}}/dockets/?date_created__gte={{req_date}}&court__jurisdiction={{jurisdiction}}&count={{count_only}}
+Authorization: Token {{courtlistener.apikey}}
+
+###
+# @name Get Docket By Id
+# @timeout 180s
+# @var request docketnum = 25A561
+# @var request jurisdiction = F
+GET http://{{courtlistener.url}}/dockets/?docket_number={{docketnum}}&court__jurisdiction={{jurisdiction}}
+Authorization: Token {{courtlistener.apikey}}
